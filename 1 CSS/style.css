@@ -1,0 +1,39 @@
+filmy {
+	width: 100%;
+	margin:0 auto;
+	text-align:center;
+	margin-top:33px;
+}
+
+film {
+	display: inline-block;
+	margin-right: 20px;
+
+	
+	background: linear-gradient(brown, green);
+	color:white;
+	border: 8px dotted green;
+	padding:10px;
+}
+
+title {
+	font-weight:bold;
+	color: white;
+	font-size: 20pt;
+	margin-right: 10px;
+	clear: both;float:left;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+
+srednia_cena,ogladalnosc,srednia_ocen,najlepszy,ilosc {
+	clear: both;
+	display: block;
+	color: #000000;
+	text-align:left;
+	float:left;
+	text-shadow: 2px 2px 4px #ffffff;
+}
+ogladalnosc{
+	text-decoration:underline;
+}

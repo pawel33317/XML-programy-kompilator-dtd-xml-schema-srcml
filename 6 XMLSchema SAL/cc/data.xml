@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:noNamespaceSchemaLocation="D:\Szkoła\XML\xml6\Pawel_Czubak_XML_zad6_201520\data.xsd" >
+<head> 
+	<meta charset="UTF-8"/>
+	<title><jt:title xmlns:jt="http://jt.org"  page="main" /></title>
+</head>
+<body> 
+	<div class="template">  
+		<div class="menu"><jt:menu xmlns:jt="http://jt.org" type="mainmenu" name="glowne" /></div>
+		<div class="content">
+			<jt:content xmlns:jt="http://jt.org" base="article" type="featured" limit="5" />
+		</div>
+		<div><jt:footer xmlns:jt="http://jt.org" page="main" /></div>
+	</div> 
+</body>
+</html>

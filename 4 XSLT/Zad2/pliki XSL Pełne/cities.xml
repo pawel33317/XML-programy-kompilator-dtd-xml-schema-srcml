@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="cities.xsl"?>
+<CITIES>
+	<CITY id="1">
+		<CREATE_ID>johnny.bravo</CREATE_ID>
+		<CREATE_DATE>10/01/07, 13:00:20</CREATE_DATE>
+		<UPDATE_ID>owner</UPDATE_ID>
+		<UPDATE_DATE>10/02/17, 13:42:15</UPDATE_DATE>
+		<CONFIRMED>false</CONFIRMED>
+		<NAME>Poznań</NAME>
+		<STADIUM>3</STADIUM>
+		<KM_STADIUM>0</KM_STADIUM>
+		<APPROACH>pkp/pks/privatebus/plane</APPROACH>
+		<PUBLICTRANS>cablecar/citybus//</PUBLICTRANS>
+		<LINKS>www.poznajpoznan.pl;Poznaj Poznań!</LINKS>
+		<TEXT>test test test test</TEXT>
+	</CITY>
+	<CITY id="2">
+		<CREATE_ID>jan_kowalski</CREATE_ID>
+		<CREATE_DATE>12/11/06, 12:01:10</CREATE_DATE>
+		<UPDATE_ID>owner</UPDATE_ID>
+		<UPDATE_DATE>10/02/16, 19:55:16</UPDATE_DATE>
+		<CONFIRMED>false</CONFIRMED>
+		<NAME>Kraków</NAME>
+		<TEXT>test test test</TEXT>
+		<STADIUM>4</STADIUM>
+		<KM_STADIUM>150</KM_STADIUM>
+		<APPROACH>pkp/pks/privatebus/plane</APPROACH>
+		<PUBLICTRANS>cablecar/citybus//</PUBLICTRANS>
+		<LINKS/>
+		<TEXT>&lt;a href='test'&gt;Test&lt;/a&gt;</TEXT>
+	</CITY>
+	<CITY id="3">
+		<CREATE_ID>bruno21</CREATE_ID>
+		<CREATE_DATE>12/11/06, 12:01:10</CREATE_DATE>
+		<UPDATE_ID>owner</UPDATE_ID>
+		<UPDATE_DATE>10/05/26, 19:42:43</UPDATE_DATE>
+		<CONFIRMED>false</CONFIRMED>
+		<NAME>Gda&amp;#324;sk</NAME>
+		<STADIUM>1</STADIUM>
+		<KM_STADIUM>10</KM_STADIUM>
+		<APPROACH>pkp/pks/privatebus/plane</APPROACH>
+		<PUBLICTRANS>cablecar/citybus//watertram</PUBLICTRANS>
+		<LINKS/>
+		<TEXT>&lt;p&gt;&lt;strong&gt;To bardzo piękne miasto&lt;/strong&gt;&lt;/p&gt;   &lt;p&gt;&lt;a rel="lytebox[imggroup]" href="http://www.staypoland.com/images/gdansk.jpg"&gt;&lt;img align="top" width="400" height="400" src="http://www.staypoland.com/images/gdansk.jpg" alt="" title="" /&gt;&lt;/a&gt;&lt;strong&gt;&lt;br /&gt;&lt;/strong&gt;&lt;/p&gt;   &lt;p&gt;&lt;span style="background-color: #993300;"&gt;&lt;font size="5"&gt;Jeszcze jedno zdjęcie&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;   &lt;p&gt;&lt;span style="background-color: #993300;"&gt;&lt;font size="5"&gt;&lt;/font&gt;&lt;/span&gt;&lt;a rel="lytebox[imggroup]" href="http://fotogalerie.pl/fotki/24/36/89/b/1091379967839.jpg"&gt;&lt;img align="top" width="400" height="400" src="http://fotogalerie.pl/fotki/24/36/89/b/1091379967839.jpg" alt="" title="" /&gt;&lt;/a&gt;&lt;span style="background-color: #993300;"&gt;&lt;font size="5"&gt;&lt;br /&gt;&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;</TEXT>
+	</CITY>	
+	<CITY id="4">
+		<CREATE_ID>owner</CREATE_ID>
+		<CREATE_DATE>10/02/11, 17:20:50</CREATE_DATE>
+		<UPDATE_ID>owner</UPDATE_ID>
+		<UPDATE_DATE>10/02/17, 13:44:46</UPDATE_DATE>
+		<CONFIRMED>false</CONFIRMED>
+		<NAME>Wrocław</NAME>
+		<STADIUM>4</STADIUM>
+		<KM_STADIUM>0</KM_STADIUM>
+		<APPROACH>pkp/pks/privatebus/plane</APPROACH>
+		<PUBLICTRANS>cablecar/citybus//</PUBLICTRANS>
+		<LINKS/>
+		<TEXT>&lt;font style=\"background-color: rgb(153, 255, 153);\" size=\"4\"&gt;&lt;b&gt;&lt;span style=\"background-color: #FFFFFF;\"&gt;Wrocław&lt;/span&gt;&lt;/b&gt;&lt;/font&gt;&lt;span style=\"background-color: rgb(153, 255, 153);\"&gt;&lt;span style=\"background-color: #FFFFFF;\"&gt; to miasto na prawach powiatu (wrocławski powiat grodzki), stolica województwa dolnośląskiego, oraz siedziba władz wrocławskiego powiatu ziemskiego g&lt;/span&gt;&lt;/span&gt;&lt;img style=\"background-color: rgb(153, 255, 153);\" src=\"http://bikemaraton.com.pl/public/spaw_upload/images/wroclaw/wroclaw4.jpg\" alt=\"\" title=\"\" align=\"right\" width=\"192\" height=\"127\" /&gt;&lt;span style=\"background-color: #FFFFFF;\"&gt; &lt;/span&gt;&lt;span style=\"background-color: rgb(153, 255, 153);\"&gt;&lt;span style=\"background-color: #FFFFFF;\"&gt;rupującego 9 okolicznych gmin. Miasto jest położone na Nizinie Śląskiej, w Pradolinie Wrocławskiej, nad rzeką Odrą i czterema jej dopływami, które zasilają ją w granicach miasta: Bystrzycą, Oławą, Ślęzą i Widawą.Jest historyczną stolicą Śląska, głównym miastem aglomeracji wrocławskiej. Czwarte pod względem liczby ludności miasto w Polsce – 632 240 mieszkańców, piąte pod względem powierzchni – 293 km². Wrocław jest również jednym z najstarszych miast Polski. Mimo zniszczeń wojennych (70% budynków) zachował wiele budowli bądź w stanie oryginalnym, bądź odrestaurowanych czy odbudowanych po wojnie. Do wyróżniających się należą: gotycki ratus&lt;/span&gt;&lt;/span&gt;&lt;img style=\"background-color: rgb(153, 255, 153);\" src=\"http://turystyka.pkt.pl/img/miasta/Wroc%C5%82aw%20-%20fontanna.jpg\" alt=\"\" title=\"\" align=\"left\" width=\"182\" height=\"121\" /&gt;&lt;span style=\"background-color: rgb(153, 255, 153);\"&gt;&lt;span style=\"background-color: #FFFFFF;\"&gt;z na Rynku, gotyckie kościoły: archikatedra św. Jana Chrzciciela na Ostrowie Tumskim (przy niej barokowa kaplica Elektorska według projektu Fischera von Erlacha), Św. Krzyża, NMP na Piasku; barokowy zespół głównych budynków Uniwersytetu Wrocławskiego z Aulą Leopoldina; neogotycki budynek Dworca Głównego; modernistyczne: Hala Ludowa (proj. Max Berg na Wystawę Stulecia, 1913; używana dziś jest także nazwa \"Hala Stulecia\", tłumaczenie pierwotnej niem. nazwy Jahrhunderdhalle), Dom Towarowy Rudolf Petersdorff (obecnie \"Kameleon\") zaprojektowany przez Ericha Mendelsohna, budynki wystawy \"Mieszkanie i miejsce pracy\" (1929, m.in. dom projektu Hansa Scharouna). Oprócz tego w mieście zachowało się ponad osiem tysięcy zabytkowych kamienic &lt;/span&gt;&lt;/span&gt;&lt;img style=\"background-color: rgb(153, 255, 153);\" src=\"http://img.interia.pl/wiadomosci/nimg/Klimatyczny_Wroclaw_2117403.jpg\" alt=\"\" title=\"\" align=\"right\" width=\"178\" height=\"114\" /&gt;&lt;span style=\"background-color: rgb(153, 255, 153);\"&gt;&lt;span style=\"background-color: #FFFFFF;\"&gt;reprezentujących style historyczne pochodzących z XIX i początków XX wieku, które władze samorządowe starają się w ramach specjalnych programów rewitalizacyjnych sukcesywnie poddawać renowacjom. Jest to największe tego typu skupisko zabytkowego budownictwa w Polsce oraz jedno z największych w Europie. Kamienice te prezentują style począwszy od baroku poprzez klasycyzm, historyzm, secesję aż po modernizm. Wiele kamienic prezentuje wysokie walory architektoniczno-estetyczne. W niektórych przypadkach są to zachowane całe ciągi ulic architektury historyzującej jak chociażby ulica Miernicza oraz plac księdza Stanisława Staszica na osiedlu Nadodrze.     &lt;/span&gt;&lt;/span&gt;&lt;span style=\"background-color: #FFFFFF;\"&gt; &lt;/span&gt;   &lt;p&gt;&lt;span style=\"background-color: #FFFFFF;\"&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;   &lt;span style=\"background-color: #FFFFFF;\"&gt;           &lt;/span&gt;   &lt;p&gt;&lt;span style=\"background-color: #FFFFFF;\"&gt;.&lt;/span&gt;&lt;/p&gt;</TEXT>
+	</CITY>
+</CITIES>

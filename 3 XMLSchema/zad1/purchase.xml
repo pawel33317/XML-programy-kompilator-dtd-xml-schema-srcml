@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<purchaseOrder orderDate="2015-10-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="purchase.xsd">
+   <shipTo>
+      <name>Marcin Makowski</name>
+      <street>Polna</street>
+	  <number>123</number>
+      <city>Warszawa</city>
+      <state>Mazowieckie</state>
+   </shipTo>
+   <billTo>
+      <name>Kamil Kowalski</name>
+      <street>Leśna</street>
+	  <number>11</number>
+      <city>Łódź</city>
+      <state>Łódzkie</state>
+   </billTo>
+   <comment>Komentarz pierwszy</comment>
+   <comment>Komentarz drugi</comment>
+   <items>
+      <item partNum="12345-abc">
+         <productName>Szpachla</productName>
+         <quantity>8</quantity>
+         <USPrice>9.99</USPrice>
+         <comment>Kosmetyki kobiece</comment>
+         <shipDate>2015-10-15</shipDate>
+      </item>
+      <item partNum="54321-sxw">
+         <productName>Tusz do rzęs</productName>
+         <quantity>2</quantity>
+         <USPrice>1.23</USPrice>
+		 <comment>Kosmetyki kobiece</comment>
+         <shipDate>2015-10-15</shipDate>
+      </item>
+   </items>
+</purchaseOrder>

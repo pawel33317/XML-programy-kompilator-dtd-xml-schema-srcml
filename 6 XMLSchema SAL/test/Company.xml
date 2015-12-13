@@ -1,0 +1,16 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<Company xmlns="http://www.company.org"
+         xmlns:pro="http://www.product.org"
+         xmlns:per="http://www.person.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation=
+                        "http://www.company.org
+                         D:\Szkoła\XML\xml6\Pawel_Czubak_XML_zad6_201520\test\Company.xsd">
+        <Person>
+                <per:Name>John Doe</per:Name>
+                <per:SSN>123-45-6789</per:SSN>
+        </Person>
+        <Product>
+                <pro:Type>Widget</pro:Type>
+        </Product>
+</Company>

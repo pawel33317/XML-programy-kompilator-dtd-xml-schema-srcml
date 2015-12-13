@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="coding.xsd">
+	<function>
+		<type>
+			<name>bool</name>
+		</type>
+		<name>czy_pierwsza</name>
+		<parameter_list>
+			<parameter>
+				<decl>
+					<type>
+						<name>int</name>
+					</type>
+					<name>n</name>
+				</decl>
+			</parameter>
+		</parameter_list>
+		<block>
+			<if>
+				<condition>
+					<expr>
+						<name>n</name>
+						<operator>&lt;</operator>
+						<literal type="number">2</literal>
+					</expr>
+				</condition>
+				<then>
+					<block type="pseudo">
+						<return> 
+							<expr>
+								<name>false</name>
+							</expr>
+						</return>
+					</block>
+				</then>
+			</if>
+			<for>
+				<control>
+					<init>
+						<decl>
+							<type>
+								<name>int</name>
+							</type>
+							<name>i</name>
+							<init>
+								<expr>
+									<literal type="number">2</literal>
+								</expr>
+							</init>
+						</decl>
+					</init>
+					<condition>
+						<expr>
+							<name>i</name>
+							<operator>*</operator>
+							<name>i</name>
+							<operator>&lt;=</operator>
+							<name>n</name>
+						</expr>
+					</condition>
+					<incr>
+						<expr>
+							<name>i</name>
+							<operator>++</operator>
+						</expr>
+					</incr>
+				</control>
+				<block type="pseudo">
+					<if>
+						<condition>
+							<expr>
+								<name>n</name>
+								<operator>%</operator>
+								<name>i</name>
+								<operator>==</operator>
+								<literal type="number">0</literal>
+							</expr>
+						</condition>
+						<then>
+							<block type="pseudo">
+								<return>
+									<expr>
+										<name>false</name>
+									</expr>
+								</return>
+							</block>
+						</then>
+					</if>
+				</block>
+			</for>
+			<return>
+				<expr>
+					<name>true</name>
+				</expr>
+			</return>
+		</block>
+	</function>
+	<function>
+		<type>
+			<name>int</name>
+		</type>
+		<name>main</name>
+		<parameter_list>()</parameter_list>
+		<block>
+			<decl_stmt>
+				<decl>
+					<type>
+						<name>int</name>
+					</type>
+					<name>n</name>
+					<init>
+						<expr>
+							<literal type="number">100</literal>
+						</expr>
+					</init>
+				</decl>
+			</decl_stmt>
+			<for>
+				<control>
+					<init>
+						<decl>
+							<type>
+								<name>int</name>
+							</type>
+							<name>i</name>
+							<init>
+								<expr>
+									<literal type="number">0</literal>
+								</expr>
+							</init>
+						</decl>
+					</init>
+					<condition>
+						<expr>
+							<name>i</name>
+							<operator>&lt;=</operator>
+							<name>n</name>
+						</expr>
+					</condition>
+					<incr>
+						<expr>
+							<name>i</name>
+							<operator>++</operator>
+						</expr>
+					</incr>
+				</control>
+				<block>
+					<if>
+						<condition>
+							<expr>
+								<call>
+									<name>czy_pierwsza</name>
+									<argument_list>
+										<argument>
+											<expr>
+												<name>i</name>
+											</expr>
+										</argument>
+									</argument_list>
+								</call>
+							</expr>
+						</condition>
+						<then>
+							<block>
+								<expr_stmt>
+									<expr>
+										<call>
+											<name>wypisz</name>
+											<argument_list>
+												<argument>
+													<expr>
+														<name>i</name>
+													</expr>
+												</argument>
+											</argument_list>
+										</call>
+									</expr>
+								</expr_stmt>
+							</block>
+						</then>
+					</if>
+				</block>
+			</for>
+			<return>
+				<expr>
+					<literal type="number">0</literal>
+				</expr>
+			</return>
+		</block>
+	</function>
+</unit>
+
+
+
+<!--
+<function><type><name>bool</name></type> <name>czy_pierwsza</name><parameter_list>(<parameter><decl><type><name>int</name></type> <name>n</name></decl></parameter>)</parameter_list>
+<block>{
+  <if>if<condition>(<expr><name>n</name><operator>&lt;</operator><literal type="number">2</literal></expr>)</condition><then>
+    <block type="pseudo"><return>return <expr><name>false</name></expr>;</return></block></then></if>
+  <for>for<control>(<init><decl><type><name>int</name></type> <name>i</name><init>=<expr><literal type="number">2</literal></expr></init></decl>;</init><condition><expr><name>i</name><operator>*</operator><name>i</name><operator>&lt;=</operator><name>n</name></expr>;</condition><incr><expr><name>i</name><operator>++</operator></expr></incr>)</control>
+    <block type="pseudo"><if>if<condition>(<expr><name>n</name><operator>%</operator><name>i</name><operator>==</operator><literal type="number">0</literal></expr>)</condition><then>
+      <block type="pseudo"><return>return <expr><name>false</name></expr>;</return></block></then></if></block></for>
+  <return>return <expr><name>true</name></expr>;</return>
+}</block></function>
+ 
+<function><type><name>int</name></type> <name>main</name><parameter_list>()</parameter_list>
+<block>{
+  <decl_stmt><decl><type><name>int</name></type> <name>n</name> <init>= <expr><literal type="number">100</literal></expr></init></decl>;</decl_stmt>
+  <for>for<control>(<init><decl><type><name>int</name></type> <name>i</name><init>=<expr><literal type="number">0</literal></expr></init></decl>;</init><condition><expr><name>i</name><operator>&lt;=</operator><name>n</name></expr>;</condition><incr><expr><name>i</name><operator>++</operator></expr></incr>)</control><block>{
+  	<if>if<condition>(<expr><call><name>czy_pierwsza</name><argument_list>(<argument><expr><name>i</name></expr></argument>)</argument_list></call></expr>)</condition><then><block>{
+  		<expr_stmt><expr><call><name>wypisz</name><argument_list>(<argument><expr><name>i</name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+	  }</block></then></if>
+  }</block></for>
+  <return>return <expr><literal type="number">0</literal></expr>;</return>
+}</block></function></unit>
+
+bool czy_pierwsza(int n)
+{
+  if(n<2)
+    return false;
+  for(int i=2;i*i<=n;i++)
+    if(n%i==0)
+      return false;
+  return true;
+}
+ 
+int main()
+{
+  int n = 100;
+  for(int i=0;i<=n;i++){
+  	if(czy_pierwsza(i)){
+  		wypisz(i);
+	  }
+  }
+  return 0;
+}
+
+-->

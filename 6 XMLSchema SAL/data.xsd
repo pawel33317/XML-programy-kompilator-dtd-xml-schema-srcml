@@ -1,0 +1,81 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"> 
+	<xsd:element name="ddiv" type="xsd:string"/> 
+
+	<xsd:element name="html" type="thtml"/> 
+	<xsd:complexType name="thtml"> 
+		<xsd:sequence> 
+			<xsd:element name="head" type="thead" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="body" type="tbody" minOccurs="1" maxOccurs="1"/>
+		</xsd:sequence> 
+	</xsd:complexType> 
+
+	<xsd:complexType name="thead"> 
+		<xsd:sequence> 
+			<xsd:element name="meta" type="tmeta" minOccurs="1"/>
+			<xsd:element name="title" type="ttitle" minOccurs="1"/>
+		</xsd:sequence> 
+	</xsd:complexType> 
+
+	<xsd:complexType name="tbody"> 
+		<xsd:sequence> 
+			<xsd:element name="div" type="tdiv"/>
+		</xsd:sequence> 
+	</xsd:complexType> 
+
+	<xsd:complexType name="tdiv"> 
+		<xsd:sequence> 
+			<xsd:element name="div" type="tmenudiv"/>
+			<xsd:element name="div" type="tcontentdiv"/>
+			<xsd:element name="div" type="tfooterdiv"/>
+		</xsd:sequence> 
+		<xsd:attribute name="class" type="xsd:string"/>
+	</xsd:complexType> 
+
+	<xsd:complexType name="tmenudiv"> 
+		<xsd:sequence> 
+			<xsd:element name="jt_menu" type="tjt_menu"/>
+		</xsd:sequence> 
+		<xsd:attribute name="class" type="xsd:string"/>
+	</xsd:complexType> 
+	<xsd:complexType name="tcontentdiv"> 
+		<xsd:sequence> 
+			<xsd:element name="jt_content" type="tjt_content"/>
+		</xsd:sequence> 
+		<xsd:attribute name="class" type="xsd:string"/>
+	</xsd:complexType> 
+	<xsd:complexType name="tfooterdiv"> 
+		<xsd:sequence> 
+			<xsd:element name="jt_footer" type="tjt_footer"/>
+		</xsd:sequence> 
+	</xsd:complexType> 	
+
+	<xsd:complexType name="tjt_menu"> 
+		<xsd:attribute name="type" type="xsd:string"/>
+		<xsd:attribute name="name" type="xsd:string"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="tjt_content"> 
+		<xsd:attribute name="base" type="xsd:string"/>
+		<xsd:attribute name="type" type="xsd:string"/>
+		<xsd:attribute name="limit" type="xsd:integer"/>
+	</xsd:complexType> 
+
+	<xsd:complexType name="tjt_footer"> 
+		<xsd:attribute name="page" type="xsd:string"/>
+	</xsd:complexType> 
+
+	<xsd:complexType name="ttitle"> 
+		<xsd:sequence> 
+			<xsd:element name="jt_title" type="tjt_title"/>
+		</xsd:sequence> 
+	</xsd:complexType> 
+
+
+	<xsd:complexType name="tjt_title"> 
+		<xsd:attribute name="page" type="xsd:string"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="tmeta"> 
+		<xsd:attribute name="charset" type="xsd:string"/>
+	</xsd:complexType>
+</xsd:schema>

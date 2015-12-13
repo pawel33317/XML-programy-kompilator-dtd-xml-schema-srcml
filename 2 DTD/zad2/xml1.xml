@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalog SYSTEM "product.dtd">
+<catalog>
+	<product name="Monitor" category="table" partnum="CZ432" plant="chicago" inventory="instock">
+		<specifications weight="2.22" power="456">Specyfikacja v1.1</specifications>
+		<options finish="polished" adapter="included" case="hardshell"/>
+		<price msrp="no" wholesale="99999" street="Wierzbowa" shipping="yes">345zl</price>
+		<notes>Autor: &author; Firma: &company;Email: &email;</notes>
+	</product>
+</catalog>

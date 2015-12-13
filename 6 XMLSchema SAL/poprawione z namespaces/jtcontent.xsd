@@ -1,0 +1,40 @@
+<xsd:schema 
+			xmlns:tns="http://jt.org"
+			targetNamespace="http://jt.org" 
+			xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+			elementFormDefault="qualified"
+			attributeFormDefault="unqualified">
+
+	<xsd:element name="jcontent">	
+		<xsd:complexType> 
+			<xsd:attribute name="base" type="xsd:string"/>
+			<xsd:attribute name="type" type="xsd:string"/>
+			<xsd:attribute name="limit" type="xsd:integer"/>
+		</xsd:complexType>   
+	</xsd:element>
+
+	<xsd:element name="title">
+		<xsd:complexType> 
+			<xsd:attribute name="page" type="xsd:string"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="menu">
+		<xsd:complexType> 
+			<xsd:attribute name="type" type="xsd:string"/>
+			<xsd:attribute name="name" type="xsd:string"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="content">
+		<xsd:complexType> 
+			<xsd:attribute name="base" type="xsd:string"/>
+			<xsd:attribute name="type" type="xsd:string"/>
+			<xsd:attribute name="limit" type="xsd:integer"/>
+		</xsd:complexType> 
+	</xsd:element>
+	<xsd:element name="footer">
+		<xsd:complexType> 
+			<xsd:attribute name="page" type="xsd:string"/>
+		</xsd:complexType> 
+	</xsd:element>
+</xsd:schema>
+

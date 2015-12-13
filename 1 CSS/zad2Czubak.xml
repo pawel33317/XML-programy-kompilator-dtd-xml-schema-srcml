@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+
+
+<filmy>
+
+<film name="akcja">
+	<title>Akcja</title>
+	<ilosc>423</ilosc>
+	<srednia_cena id="21">15,33</srednia_cena>
+	<ogladalnosc>duza</ogladalnosc>
+	<srednia_ocen>5</srednia_ocen>
+	<najlepszy nr="23"></najlepszy>
+</film>
+<film name="melodramat">
+	<title>Melodramat</title>
+	<ilosc>111</ilosc>
+	<srednia_cena id="21">14,32</srednia_cena>
+	<ogladalnosc>duza</ogladalnosc>
+	<srednia_ocen>1</srednia_ocen>
+	<najlepszy nr="23"></najlepszy>
+</film>
+<film name="komedia">
+	<title>Komedia</title>
+	<ilosc>123</ilosc>
+	<srednia_cena id="21">17,44</srednia_cena>
+	<ogladalnosc>srednia</ogladalnosc>
+	<srednia_ocen>5</srednia_ocen>
+	<najlepszy nr="23"></najlepszy>
+</film>
+<film name="dramat">
+	<title>Dramat</title>
+	<ilosc>411</ilosc>
+	<srednia_cena id="21">16,13</srednia_cena>
+	<ogladalnosc >duza</ogladalnosc>
+	<srednia_ocen>3</srednia_ocen>
+	<najlepszy nr="23"></najlepszy>
+</film>
+
+</filmy>

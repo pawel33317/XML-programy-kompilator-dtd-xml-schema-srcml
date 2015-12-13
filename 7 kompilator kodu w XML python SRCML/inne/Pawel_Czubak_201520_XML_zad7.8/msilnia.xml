@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="coding.xsd">
+	<function>
+		<type>
+			<name>int</name>
+		</type>
+		<name>main</name>
+		<parameter_list>()</parameter_list>
+		<block>
+			<decl_stmt>
+				<decl>
+					<type>
+						<name>int</name>
+					</type>
+					<name>n</name>
+					<init>
+						<expr>
+							<literal type="number">5</literal>
+						</expr>
+					</init>
+				</decl>
+			</decl_stmt>
+			<decl_stmt>
+				<decl>
+					<type>
+						<name>int</name>
+					</type>
+					<name>silnia</name>
+					<init>
+						<expr>
+							<literal type="number">1</literal>
+						</expr>
+					</init>
+				</decl>
+			</decl_stmt>
+			<while>
+				<condition>
+					<expr>
+						<name>n</name>
+						<operator>&gt;</operator>
+						<literal type="number">1</literal>
+					</expr>
+				</condition>
+				<block>
+					<expr_stmt>
+						<expr>
+							<name>silnia</name>
+							<operator>=</operator>
+							<name>silnia</name>
+							<operator>*</operator>
+							<name>n</name>
+						</expr>
+					</expr_stmt>
+					<expr_stmt>
+						<expr>
+							<name>n</name>
+							<operator>=</operator>
+							<name>n</name>
+							<operator>-</operator>
+							<literal type="number">1</literal>
+						</expr>
+					</expr_stmt>
+				</block>
+			</while>
+			<expr_stmt>
+				<expr>
+					<call>
+						<name>wypisz</name>
+						<argument_list>
+							<argument>
+								<expr>
+									<name>silnia</name>
+								</expr>
+							</argument>
+						</argument_list>
+					</call>
+				</expr>
+			</expr_stmt>
+			<return>
+				<expr>
+					<literal type="number">0</literal>
+				</expr>
+			</return>
+		</block>
+	</function>
+</unit>
+
+<!--
+int main() {
+	int n = 5;
+    int silnia = 1;
+  	while(n > 1){
+    	silnia = silnia * n;
+    	n = n-1;
+	}
+	wypisz(silnia);
+  	return 0;
+}
+
+<function><type><name>int</name></type> <name>main</name><parameter_list>()</parameter_list> <block>{
+	<decl_stmt><decl><type><name>int</name></type> <name>n</name> <init>= <expr><literal type="number">5</literal></expr></init></decl>;</decl_stmt>
+    <decl_stmt><decl><type><name>int</name></type> <name>silnia</name> <init>= <expr><literal type="number">1</literal></expr></init></decl>;</decl_stmt>
+  	<while>while<condition>(<expr><name>n</name> <operator>&gt;</operator> <literal type="number">1</literal></expr>)</condition><block>{
+    	<expr_stmt><expr><name>silnia</name> <operator>=</operator> <name>silnia</name> <operator>*</operator> <name>n</name></expr>;</expr_stmt>
+    	<expr_stmt><expr><name>n</name> <operator>=</operator> <name>n</name><operator>-</operator><literal type="number">1</literal></expr>;</expr_stmt>
+	}</block></while>
+	<expr_stmt><expr><call><name>wypisz</name><argument_list>(<argument><expr><name>silnia</name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+  	<return>return <expr><literal type="number">0</literal></expr>;</return>
+}</block></function>
+
+
+-->

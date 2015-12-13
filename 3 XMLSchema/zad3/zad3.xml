@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filmy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="zad3.xsd">
+	<film type="akcja" code="xc-22">
+		<title>Akcja</title>
+		<ilosc>423</ilosc>
+		<srednia_cena id="21" prod="yes">15.33</srednia_cena>
+		<ogladalnosc>duzy</ogladalnosc>
+		<srednia_ocen>5</srednia_ocen>
+		<najlepszy nr="23"/>
+		<najgorszy nr="23"/>
+	</film>
+	<film type="melodramat" code="cs-22">
+		<title>Melodramat</title>
+		<ilosc>111</ilosc>
+		<srednia_cena id="21">14.32</srednia_cena>
+		<ogladalnosc>duzy</ogladalnosc>
+		<srednia_ocen>1</srednia_ocen>
+		<najlepszy nr="23"/>
+		<najgorszy nr="23"/>
+	</film>
+	<film type="komedia">
+		<title>Komedia</title>
+		<ilosc>123</ilosc>
+		<srednia_cena id="21">17.44</srednia_cena>
+		<ogladalnosc>average</ogladalnosc>
+		<srednia_ocen>5</srednia_ocen>
+		<najlepszy nr="23"/>
+		<najgorszy nr="23"/>
+	</film> 
+	<film type="dramat">
+		<title>Dramat</title>
+		<ilosc>411</ilosc>
+		<srednia_cena id="21">16.13</srednia_cena>
+		<ogladalnosc >small</ogladalnosc>
+		<srednia_ocen>3</srednia_ocen>
+		<najlepszy nr="23"/>
+		<najgorszy nr="23"/>
+	</film>
+</filmy>

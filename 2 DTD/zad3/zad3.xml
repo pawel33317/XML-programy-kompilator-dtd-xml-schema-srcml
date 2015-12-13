@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<!DOCTYPE filmy [ 
+<!ELEMENT filmy (film+)> 
+<!ATTLIST film 	type CDATA #REQUIRED 
+				section_id CDATA #IMPLIED> 			
+<!ELEMENT film (title, ilosc, srednia_cena, ogladalnosc, srednia_ocen, (najlepszy+|najgorszy+))> 
+
+<!ELEMENT title (#PCDATA)> 
+<!ELEMENT ilosc (#PCDATA)> 
+<!ELEMENT srednia_cena (#PCDATA)> 
+<!ELEMENT ogladalnosc (#PCDATA)> 
+<!ELEMENT srednia_ocen (#PCDATA)> 
+<!ELEMENT najlepszy (#PCDATA)> 
+<!ELEMENT najgorszy (#PCDATA)> 
+
+<!ATTLIST srednia_cena id NMTOKEN #REQUIRED> 
+<!ATTLIST srednia_cena prod CDATA #IMPLIED> 
+<!ATTLIST najlepszy nr CDATA #REQUIRED> 
+<!ATTLIST najgorszy nr CDATA #REQUIRED> 
+
+<!ENTITY big "DUZA"> 
+<!ENTITY small "MALA"> 
+<!ENTITY average "SREDNIA"> 
+]>
+
+<filmy>
+	<film type="akcja">
+		<title>Akcja</title>
+		<ilosc>423</ilosc>
+		<srednia_cena id="21" prod="yes">15,33</srednia_cena>
+		<ogladalnosc>&big;</ogladalnosc>
+		<srednia_ocen>5</srednia_ocen>
+		<najlepszy nr="23"/>
+	</film>
+	<film type="melodramat">
+		<title>Melodramat</title>
+		<ilosc>111</ilosc>
+		<srednia_cena id="21">14,32</srednia_cena>
+		<ogladalnosc>&big;</ogladalnosc>
+		<srednia_ocen>1</srednia_ocen>
+		<najgorszy nr="23"/>
+		<najgorszy nr="23"/>
+	</film>
+	<film type="komedia">
+		<title>Komedia</title>
+		<ilosc>123</ilosc>
+		<srednia_cena id="21">17,44</srednia_cena>
+		<ogladalnosc>&average;</ogladalnosc>
+		<srednia_ocen>5</srednia_ocen>
+		<najlepszy nr="23"/>
+	</film>
+	<film type="dramat">
+		<title>Dramat</title>
+		<ilosc>411</ilosc>
+		<srednia_cena id="21">16,13</srednia_cena>
+		<ogladalnosc >&small;</ogladalnosc>
+		<srednia_ocen>3</srednia_ocen>
+		<najgorszy nr="23"/>
+	</film>
+</filmy>

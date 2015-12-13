@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE instytut [ 
+<!ELEMENT instytut (zespoly)> 
+<!ATTLIST instytut 	nazwa CDATA #REQUIRED 
+						ulica CDATA #IMPLIED  
+						kod CDATA #IMPLIED 
+						miasto CDATA #FIXED "Łódź"> 
+<!ELEMENT zespoly (zespol)+> 
+<!ELEMENT zespol (nazwa,pracownicy+)> 
+<!ELEMENT nazwa (#PCDATA)> 
+<!ELEMENT pracownicy (pracownik)+> 
+<!ELEMENT pracownik (nazwisko,etat,placa)> 
+<!ATTLIST pracownik id_prac NMTOKEN #REQUIRED> 
+<!ELEMENT nazwisko (#PCDATA)> 
+<!ELEMENT etat (#PCDATA)> 
+<!ELEMENT placa (#PCDATA)> 
+<!ENTITY szef "dyrektor"> 
+]>
+
+<instytut nazwa="IIS" ulica="Stefanowskiego" kod="93-400" miasto="Łódź">
+	<zespoly>
+		<zespol>
+			<nazwa>Zespół pierwszy</nazwa>
+			<pracownicy>
+				<pracownik id_prac="JK">
+					<nazwisko>Kowalski</nazwisko>
+					<etat>3/4</etat>
+					<placa>1234</placa>
+				</pracownik>
+				<pracownik id_prac="DR">
+					<nazwisko>&szef;</nazwisko>
+					<etat>3/4</etat>
+					<placa>1234</placa>
+				</pracownik>
+			</pracownicy>
+		</zespol>
+	</zespoly>
+</instytut>
+
+

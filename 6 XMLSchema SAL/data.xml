@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title><jt:title page="main" /></title>
+</head>
+<body>
+	<div class="template">
+		<div class="menu"><jt:menu type="mainmenu" name="glowne" /></div>
+		<div class="content">
+			<jt:content base="article" type="featured" limit="5" />
+		</div>
+		<div><jt:footer page="main" /></div>
+	</div> 
+</body>
+</html>

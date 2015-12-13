@@ -1,0 +1,102 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"> 
+	<xsd:element name="SAD" type="sad_type"/> 
+	
+	<xsd:element name="Zgloszenie" type="typ_zgloszenia"/> 
+	
+	<xsd:complexType name="sad_type"> 
+		<xsd:sequence> 
+			<xsd:element ref="Zgloszenie"/>  
+		</xsd:sequence> 
+		<xsd:attribute name="EmailPodmiotu" type="email"/> 
+	</xsd:complexType> 
+
+	<xsd:simpleType name="email"> 
+		<xsd:restriction base="xsd:string"> 
+			<xsd:pattern value="[^@]+@[^\.]+\..+"/> 
+		</xsd:restriction> 
+	</xsd:simpleType> 
+
+	<xsd:complexType name="typ_zgloszenia"> 
+		<xsd:sequence> 
+			<xsd:element name="UC">
+				<xsd:complexType> 
+					<xsd:attribute name="UCZgloszenia" type="xsd:decimal" use="required"/> 
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ZglaszajacyPrzedstawiciel">
+				<xsd:complexType> 
+					<xsd:attribute name="REGON" type="xsd:decimal"/> 
+					<xsd:attribute name="NrWpisu" type="xsd:string"/> 
+				</xsd:complexType> 
+			</xsd:element>
+
+			<xsd:element name="Transport">
+				<xsd:complexType> 
+					<xsd:attribute name="Rodzaj" type="xsd:decimal"/> 
+				</xsd:complexType> 
+			</xsd:element>
+			<xsd:element name="TransportNaGranicy">
+				<xsd:complexType> 
+					<xsd:attribute name="Rodzaj" type="xsd:decimal"/> 
+					<xsd:attribute name="Kraj" type="xsd:NMTOKEN" default="PL"/> 
+				</xsd:complexType> 
+			</xsd:element>	
+			<xsd:element name="WarunkiDostawy">
+				<xsd:complexType> 
+					<xsd:attribute name="Kod" type="xsd:NMTOKEN"/> 
+				</xsd:complexType> 
+			</xsd:element>
+			<xsd:element name="WartoscTowarow">
+				<xsd:complexType> 
+					<xsd:attribute name="Waluta" type="xsd:NMTOKEN"/>
+				</xsd:complexType> 
+			</xsd:element> 
+			<xsd:element name="Towar" type="typ_towar" minOccurs="1" maxOccurs="unbounded"/>
+			<xsd:element name="MiejsceData">
+				<xsd:complexType> 
+					<xsd:attribute name="Data" type="xsd:date"/>
+					<xsd:attribute name="Miejsce" type="xsd:string"/>
+					<xsd:attribute name="NazwiskoImie" type="xsd:string"/>
+					<xsd:attribute name="Telefon" type="xsd:string"/>
+				</xsd:complexType> 
+			</xsd:element>
+		</xsd:sequence> 
+		<xsd:attribute name="P1a" type="xsd:NMTOKEN"/> 
+		<xsd:attribute name="P1b" type="xsd:NMTOKEN"/> 
+		<xsd:attribute name="P1c" type="validPC1"/>
+		<xsd:attribute name="KrajPrzeznaczenia" type="xsd:NMTOKEN"/> 
+		<xsd:attribute name="NrWlasny" type="xsd:string"/> 
+		<xsd:attribute name="LiczbaPozycji" type="xsd:integer"/> 
+		<xsd:attribute name="Kontenery" type="xsd:integer"/> 
+		<xsd:attribute name="KrajWysylki" type="xsd:NMTOKEN"/> 
+		<xsd:attribute name="RodzajTransakcji" type="xsd:integer"/> 
+	</xsd:complexType>
+	
+	
+	<xsd:simpleType name="validPC1"> 
+		<xsd:restriction base="xsd:string"> 
+			<xsd:pattern value="\d{2}-\d{2}"/> 
+		</xsd:restriction> 
+	</xsd:simpleType> 
+	
+	
+	<xsd:complexType name="typ_towar"> 
+		<xsd:sequence>  
+			<xsd:element name="WartoscTowaru" type="typ_WartoscTowaru" minOccurs="1"  maxOccurs="1"/> 
+		</xsd:sequence> 
+		<xsd:attribute name="PozId" type="xsd:integer"/> 
+		<xsd:attribute name="MasaBrutto" type="xsd:decimal"/> 
+		<xsd:attribute name="MasaNetto" type="xsd:decimal"/> 
+		<xsd:attribute name="KodTowarowy" type="xsd:integer"/> 
+		<xsd:attribute name="OpisTowaru" type="xsd:string"/> 
+		<xsd:attribute name="KrajPochodzenia" type="xsd:string"/> 
+		<xsd:attribute name="Procedura" type="xsd:integer"/> 
+	</xsd:complexType> 
+
+	<xsd:complexType name="typ_WartoscTowaru"> 
+
+		<xsd:attribute name="WartoscPozycji" type="xsd:decimal"/> 
+		<xsd:attribute name="WartoscStatystyczna" type="xsd:decimal"/> 
+	</xsd:complexType>
+	
+</xsd:schema>

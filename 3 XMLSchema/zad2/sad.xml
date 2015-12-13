@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SAD EmailPodmiotu="xxx_xxxxxx@xxx.xx"   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="sad.xsd">
+	<Zgloszenie P1a="IM" P1b="D" P1c="06-09" KrajPrzeznaczenia="AD" NrWlasny="09S0000002" LiczbaPozycji="12" Kontenery="0" KrajWysylki="PL" RodzajTransakcji="11">
+		<UC UCZgloszenia="350000"></UC>    
+		<ZglaszajacyPrzedstawiciel  REGON="00000000000002000" NrWpisu="SASP/2009/XXX/XXXXX/XXXXXXX" />        
+		<Transport Rodzaj="3" />
+		<TransportNaGranicy Rodzaj="3" Kraj="PL" />
+		<WarunkiDostawy Kod="EXW" />
+		<WartoscTowarow Waluta="USD" />
+		<Towar PozId="1" MasaBrutto="16998.000" MasaNetto="12793.000" KodTowarowy="87082990" OpisTowaru="Stalowe bloki" KrajPochodzenia="PL" Procedura="1000">
+			<WartoscTowaru WartoscPozycji="60000.00" WartoscStatystyczna="240000" />
+		</Towar>
+		<Towar PozId="2" MasaBrutto="16998.000" MasaNetto="12793.000" KodTowarowy="87082990" OpisTowaru="Podpory B" KrajPochodzenia="PL" Procedura="1000">
+			<WartoscTowaru WartoscPozycji="60000.00" WartoscStatystyczna="240000" />
+		</Towar>
+		<Towar PozId="3" MasaBrutto="16998.000" MasaNetto="12793.000" KodTowarowy="87082990" OpisTowaru="Podpory A" KrajPochodzenia="PL" Procedura="1000">
+			<WartoscTowaru WartoscPozycji="60000.00" WartoscStatystyczna="240000" />
+		</Towar>
+		<Towar PozId="4" MasaBrutto="16998.000" MasaNetto="12793.000" KodTowarowy="87082990" OpisTowaru="Mocowania" KrajPochodzenia="PL" Procedura="1000">
+			<WartoscTowaru WartoscPozycji="60000.00" WartoscStatystyczna="240000" />
+		</Towar>
+		<Towar PozId="5" MasaBrutto="16998.000" MasaNetto="12793.000" KodTowarowy="87082990" OpisTowaru="Zbrojenie" KrajPochodzenia="PL" Procedura="1000">
+			<WartoscTowaru WartoscPozycji="60000.00" WartoscStatystyczna="240000" />
+		</Towar>
+		<Towar PozId="6" MasaBrutto="16998.000" MasaNetto="12793.000" KodTowarowy="87082990" OpisTowaru="Stalowe kątowniki" KrajPochodzenia="PL" Procedura="1000">
+			<WartoscTowaru WartoscPozycji="60000.00" WartoscStatystyczna="240000" />
+		</Towar>
+		<Towar PozId="7" MasaBrutto="16998.000" MasaNetto="12793.000" KodTowarowy="87082990" OpisTowaru="Złączki" KrajPochodzenia="PL" Procedura="1000">
+			<WartoscTowaru WartoscPozycji="60000.00" WartoscStatystyczna="240000" />
+		</Towar>
+		<Towar PozId="8" MasaBrutto="16998.000" MasaNetto="12793.000" KodTowarowy="87082990" OpisTowaru="Złączki miedziane jednokrotne" KrajPochodzenia="PL" Procedura="1000">
+			<WartoscTowaru WartoscPozycji="60000.00" WartoscStatystyczna="240000" />
+		</Towar>
+		<Towar PozId="9" MasaBrutto="16998.000" MasaNetto="12793.000" KodTowarowy="87082990" OpisTowaru="Podpory C" KrajPochodzenia="PL" Procedura="1000">
+			<WartoscTowaru WartoscPozycji="60000.00" WartoscStatystyczna="240000" />
+		</Towar>
+		<Towar PozId="10" MasaBrutto="16998.000" MasaNetto="12793.000" KodTowarowy="87082990" OpisTowaru="Podpory G" KrajPochodzenia="PL" Procedura="1000">
+			<WartoscTowaru WartoscPozycji="60000.00" WartoscStatystyczna="240000" />
+		</Towar>
+		<Towar PozId="11" MasaBrutto="16998.000" MasaNetto="12793.000" KodTowarowy="87082990" OpisTowaru="Gotowe konstrukcje mocujące Y" KrajPochodzenia="PL" Procedura="1000">
+			<WartoscTowaru WartoscPozycji="60000.00" WartoscStatystyczna="240000" />
+		</Towar>
+		<Towar PozId="12" MasaBrutto="16998.000" MasaNetto="12793.000" KodTowarowy="87082990" OpisTowaru="Gotowe konstrukcje mocujące X" KrajPochodzenia="PL" Procedura="1000">
+			<WartoscTowaru WartoscPozycji="60000.00" WartoscStatystyczna="240000" />
+		</Towar>
+		<MiejsceData Data="2006-04-21" Miejsce="Miejsce" NazwiskoImie="XXXXXX Maria" Telefon="(012) 1234567" />
+	</Zgloszenie>
+</SAD>

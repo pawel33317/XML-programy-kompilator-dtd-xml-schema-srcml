@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalog SYSTEM "product.dtd">
+<catalog>
+	<product name="Monitor" category="table" partnum="CZ432" plant="chicago" inventory="instock">
+		<specifications weight="2.22" power="456">Specyfikacja v1.1</specifications>
+		<options finish="polished" adapter="included" case="hardshell"/>
+		<price msrp="888" wholesale="999" street="Wierzbowa" shipping="yes">345zl</price>
+		<notes>Autor: &author; Firma: &company;Email: &email;</notes>
+	</product>
+	<product name="Krzeslo" category="table" partnum="KK435" plant="milwaukee" inventory="backordered">
+		<specifications weight="12.22" power="4256">Using spec</specifications>
+		<options finish="polished" adapter="included" case="notapplicable"/>
+		<price msrp="55" wholesale="44" street="Makaronowa" shipping="19">452$</price>
+		<price msrp="56" wholesale="45" street="Makaronowa" shipping="22">452$</price>
+		<notes>Autor: &author; Firma: &company;Email: &email;</notes>
+	</product>
+</catalog>
